@@ -1,0 +1,70 @@
+.about-section-container {
+  margin-top: 20rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-background-image-container {
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+}
+
+.about-section-image-container {
+  flex: 0.9;
+  margin-right: 1rem;
+}
+
+.about-section-text-container {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.primary-subheading {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #0aff0a; /* Grün für Neon */
+  text-shadow: 0 0 10px #0aff0a, 0 0 20px #0aff0a, 0 0 30px #0aff0a;
+  animation: neon-flicker 1s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  from {
+    text-shadow: 0 0 10px #0aff0a, 0 0 20px #0aff0a, 0 0 30px #0aff0a;
+  }
+  to {
+    text-shadow: 0 0 20px #0aff0a, 0 0 30px #0aff0a, 0 0 40px #0aff0a;
+  }
+}
+
+.about-buttons-container {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.about-buttons-container
+.watch-video-button {
+  margin-left: 2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #46ec19;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-video-button svg {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
